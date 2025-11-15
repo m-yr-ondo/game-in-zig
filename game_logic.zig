@@ -4,7 +4,7 @@ const c = @cImport({
     @cInclude("SDL3/SDL.h");
 });
 
-// Import graphics module
+
 const graphics = @import("graphics.zig");
 
 pub const Box = struct {
@@ -163,14 +163,14 @@ pub const Timekeeper = struct {
 };
 
 pub fn resetGame() void {
-    // Reset game logic here
+   
 }
 
 pub fn updateGameState(timekeeper: *Timekeeper) void {
-    // Update game state logic here
+    
 }
 
 pub fn getScore() u32 {
-    // Return current score
+    
     return 0;
 }
