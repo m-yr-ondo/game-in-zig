@@ -4,7 +4,7 @@ const c = @cImport({
     @cInclude("SDL3/SDL.h");
 });
 
-// Import game logic module
+
 const game_logic = @import("game_logic.zig");
 
 pub fn createWindowAndRenderer(title: [*:0]const u8, width: c_int, height: c_int) !struct { *c.SDL_Window, *c.SDL_Renderer } {
